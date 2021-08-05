@@ -12,8 +12,8 @@ private:
 	char direction;
 public:
 	void setPos();
-	int getDeg();
-	float getMin();
-	char getDirect();
+	int getDeg(int degrees);
+	float getMin(float minutes);
+	char getDirect(char direction);
 };
 #endif

@@ -20,17 +20,20 @@ void Location::setPos()
 
 	cout << "Input heading (N/W/S/E): ";
 	cin >> direction;
-	if (direction != 'N')
+	if (direction != 'N' || direction != 'W' || direction != 'S' || direction != 'E')
+	{
+		cout << "Please enter a valid direction (N/W/S/E)";
+	}
 }
-int getDeg()
+int getDeg(int degrees)
 {
 	return degrees;
 }
-float getMin()
+float getMin(float minutes)
 {
 	return minutes;
 }
-char getDirect()
+char getDirect(char direction)
 {
 	return direction;
 }
